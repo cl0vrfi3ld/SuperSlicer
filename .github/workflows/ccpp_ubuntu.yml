@@ -1,12 +1,13 @@
 name: C/C++ Nightly ubuntu
 
-on:
-  push:
-    branches:
-      - Nigthly
-      - nightly_dev
-      - nightly_master
-      - debug_ubuntu
+on: [workflow_dispatch, push]
+  # push:
+  #     branches:
+  #       - Nigthly
+  #       - nightly_dev
+  #       - nightly_master
+  #       - debug_ubuntu
+  
 
 jobs:
   build:
